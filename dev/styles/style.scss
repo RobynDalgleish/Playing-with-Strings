@@ -1,0 +1,14 @@
+@import 'components/normalize';
+@import 'components/base';
+@import 'components/typography';
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+// This was the styles for the loading indicator
+// #preamble {
+// 		 transition: all 2s ease-in-out;
+// 		 color: #fff;
+// 	 }
