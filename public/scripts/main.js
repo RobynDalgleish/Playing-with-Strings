@@ -23,7 +23,7 @@ function myFunction() {
     console.log('this is after removing spaces, and punctuation: ', cleanStr);
     // I am turning the string into an array using the split method:
     var splitStr = cleanStr.split("");
-    console.log(splitStr);
+    console.log('result of .split: ', splitStr);
 
     // The following commented code was the start of making a fun "loading" indicator:
     // document.getElementById("preamble").innerHTML = 'We are deciphering the sentence ingredients; one moment, please...';
@@ -53,8 +53,9 @@ function myFunction() {
         return obj;
     }, {});
 
+    // this doesn't print to the page because it is a complex object. In the future, I would google how to output my current text index (ex: 'a' and then the value), but it works in the console.
+    document.getElementById("result").innerHTML = obj[item];
     console.log(result);
-    document.getElementById("result").appendChild = result;
 };
 
 // more object oriented escapades :) :
